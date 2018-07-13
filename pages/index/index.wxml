@@ -1,0 +1,10 @@
+<view class="flex box box-lr">
+  <view class="nav box box-tb">
+    <view bindtap="tabLetter" data-index="{{index}}" wx:for="{{letters}}" class="flex box box-align-center box-pack-center letter">
+      <text class="letter-text {{selected == index ? 'letter-actived' : ''}}">{{item}}</text>
+    </view>
+  </view>
+</view>
+<view class='name' wx:for="{{storeList}}">
+  {{item.name}}
+</view>
